@@ -4,7 +4,7 @@ class Personal_ground_transport(LandTransport):
         LandTransport.__init__(self, number_of_wheels, purpose_of_use, transmission)
         self.production_date = production_date
 
-    def weight_transport(self):
+    def weight_transport(self)
         if 0 < self.weight < 500:
             print('Транспорт категории А')
         elif 500 < self.weight < 3500:

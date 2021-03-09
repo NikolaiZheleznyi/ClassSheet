@@ -5,7 +5,7 @@ class AirTransport(Transport):
         self.type_of_air_tpansport = type_of_air_tpansport
 
     def take_off(self):
-        print('Воздушное идёт на взлёт')
+        print('Воздушное судно идёт на взлёт')
 
     def landing(self):
         print('Воздушное судно идёт на посадку')
