@@ -6,7 +6,14 @@ class Transport:
         self.weight = weight
         self.color = color
     def engine(self):
-        if self.engine_type == 'бензин' or 'дизель' or 'газ':
-            print('Не экологическое топливо')
+        if self.engine_type == 'бензин':
+            print('Не экологичное топливо')
+        elif self.engine_type == 'дизель':
+            print('Не экологичное топливо')
+        elif self.engine_type == 'газ':
+            print('Не экологичное топливо')
         elif self.engine_type == 'электричество':
-            print('Экологическое топливо')
+            print('Экологичное топливо')
+        else:
+            print('Чет не то ввёл')
+

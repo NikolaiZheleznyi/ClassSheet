@@ -6,7 +6,7 @@ class LandTransport(Transport):
         self.purpose_of_use = purpose_of_use
         self.transmission = transmission
 
-    def weight_transport(self):
+    def number_of_wheels_transport(self):
         if 1 < self.number_of_wheels <= 3:
             print('Мотоцикл')
         elif self.number_of_wheels == 4:
@@ -14,5 +14,5 @@ class LandTransport(Transport):
         elif 4 < self.number_of_wheels:
             print('Грузовой или общественный транспорт')
         else:
-            print('У транспорта с отрицательным весом нет категории')
+            print('Error')
 
