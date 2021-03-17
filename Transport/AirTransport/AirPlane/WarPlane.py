@@ -1,8 +1,8 @@
 from Transport.AirTransport.AirPlane.Airplane import Airplane
 class WarPlane(Airplane):
-    def __init__(self, arming, flying_height):
-        Airplane.__init__(flying_height)
-        self.number_of_passengers = arming
+    def __init__(self, flying_height,brand, country_of_origin, engine_type, weight, color):
+        Airplane.__init__(self, flying_height,brand, country_of_origin, engine_type, weight, color)
+
 
     def attack(self):
         print('Атаковать противника!')

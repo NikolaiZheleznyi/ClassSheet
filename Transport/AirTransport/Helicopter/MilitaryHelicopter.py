@@ -1,8 +1,8 @@
 from Transport.AirTransport.Helicopter.Helicopter import Helicopter
 class MilitaryHelicopter(Helicopter):
-    def __init__(self, arming, type_of_helicopter):
-        Helicopter.__init__(type_of_helicopter)
-        self.arming = arming
+    def __init__(self, brand, country_of_origin, engine_type, weight, color):
+        Helicopter.__init__(self, brand, country_of_origin, engine_type, weight, color)
+
 
     def fire_machine_gun(self):
         print('Открыть огонь из пулемёта!')

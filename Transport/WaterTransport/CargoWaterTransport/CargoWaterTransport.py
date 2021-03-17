@@ -1,8 +1,8 @@
 from Transport.WaterTransport.WaterTransport import WaterTransport
 class CargoWaterTransport(WaterTransport):
-    def __init__(self, type_of_cargo, type_of_water_transport):
-        WaterTransport.__init__(type_of_water_transport)
-        self.type_of_cargo = type_of_cargo
+    def __init__(self, brand, country_of_origin, engine_type, weight, color):
+        WaterTransport.__init__(self, brand, country_of_origin, engine_type, weight, color)
+
 
     def loading_cargo_on_ship(self):
         print('Погрузка завершена! Корабаль готов к отправлению!')

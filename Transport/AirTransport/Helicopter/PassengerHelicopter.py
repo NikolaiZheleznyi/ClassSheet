@@ -1,7 +1,7 @@
 from Transport.AirTransport.Helicopter.Helicopter import Helicopter
 class PassengerHelicopter(Helicopter):
-    def __init__(self, flight_cost, type_of_helicopter):
-        Helicopter.__init__(type_of_helicopter)
+    def __init__(self, flight_cost, brand, country_of_origin, engine_type, weight, color):
+        Helicopter.__init__(self, brand, country_of_origin, engine_type, weight, color)
         self.flight_cost = flight_cost
 
     def calculation_flight_price(self):
